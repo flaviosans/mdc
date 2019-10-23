@@ -1,16 +1,29 @@
 package com.pubit;
 
 /**
- * Hello world!
- *
+ * Aplicação simples construída com o Maven
+ * 
+ * @author Stefanie
+ * @author Flavio
+ * 
  */
 public class App 
 {
+    /**
+     * Classe principal da aplicação simples
+     * @param args
+     */
     public static void main( String[] args )
     {
         App.mdc("9 12");
         System.out.println( "Hello World!" );
     }
+
+    /**
+     * Calcula o máximo divisor comum de dois números
+     * @param n a string contendo os números
+     * @return o máximo divisor comum
+     */
 
     public static int mdc(String n) {
 

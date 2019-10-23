@@ -1,12 +1,21 @@
-#Interativo totalmente
+# Comando Interativo totalmente
 mvn archetype:generate
 
-#Ola mundo não interativo
+# Comando não interativo
 mvn archetype:generate -DgroupId=com.topicos -DartifactId=olamundo -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.0 -DinteractiveMode=false
 
-#Ola mundo Interativo
-mvn archetype:generate
+#Compilar o seu código fonte
+mvn compile
+# Testar o código
+mvn test
 
+# Empacotar num arquivo JAR
+mvn package
+
+# Compila, empacota, roda os testes e 
+# coloca no repositório local
+
+mvn install
 #Construir o projeto, sem rodar os testes 
 mvn clean package -DskipTests
 
